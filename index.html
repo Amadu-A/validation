@@ -8,20 +8,20 @@
 </head>
 <body>
 	<form action="mail.php" enctype="multipart/form-data" class="form" method="POST">
-		<input type="hidden" name="admin_email[]" value="main_ivan@mail.ru">
+		<input type="hidden" name="admin_email[]" value="any@mail.ru">
 		<input type="hidden" name="form_subject" value="Тема письма">
 		<h2>Отправка формы</h2>
 		<label class="form-label">
 			<span>Введите имя</span>
-			<input type="text" name="name">
+			<input type="text" data-validate-field="name" name="name" required>
 		</label>
 		<label class="form-label">
 			<span>Введите телефон</span>
-			<input type="tel" data-validate-field="tel" name="tel">
+			<input type="tel" data-validate-field="tel" name="tel" required>
 		</label>
 		<label class="form-label">
 			<span>Введите email</span>
-			<input type="email" data-validate-field="email" name="email">
+			<input type="email" data-validate-field="email" name="email" required>
 		</label>
 		<label class="form-label file-label">
 			<span>Прикрепить файл</span>
